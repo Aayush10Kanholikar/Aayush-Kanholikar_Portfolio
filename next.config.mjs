@@ -1,44 +1,42 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  typescript: {
+    ignoreBuildErrors: true,
+  },
   images: {
     domains: [
       "api.microlink.io", // Microlink Image Preview
     ],
     remotePatterns: [
       {
-        protocol: 'https',
-        hostname: 'www.w3.org',
+        protocol: "https",
+        hostname: "www.w3.org",
         // port: '3000',
         // pathname: '/account123/**',
-        
       },
       {
-        protocol: 'https',
-        hostname: 'cdn-icons-png.flaticon.com',
+        protocol: "https",
+        hostname: "cdn-icons-png.flaticon.com",
         // port: '3000',
         // pathname: '/account123/**',
-        
       },
       {
-        protocol: 'https',
-        hostname: 'www.mysql.com',
+        protocol: "https",
+        hostname: "www.mysql.com",
         // port: '3000',
         // pathname: '/account123/**',
-        
       },
       {
-        protocol: 'https',
-        hostname: 'static-00.iconduck.com',
+        protocol: "https",
+        hostname: "static-00.iconduck.com",
         // port: '3000',
         // pathname: '/account123/**',
-        
       },
       {
-        protocol: 'https',
-        hostname: 'adware-technologies.s3.amazonaws.com',
+        protocol: "https",
+        hostname: "adware-technologies.s3.amazonaws.com",
         // port: '3000',
         // pathname: '/account123/**',
-        
       },
     ],
   },

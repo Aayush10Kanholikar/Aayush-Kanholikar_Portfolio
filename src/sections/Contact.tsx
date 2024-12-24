@@ -1,7 +1,6 @@
 "use client";
 
-import ArrowUpRightIcon from "../assets/icons/arrow-up-right.svg";
-import { ChangeEvent, useRef, useState } from "react";
+import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
@@ -65,7 +64,7 @@ const Contact = () => {
     e.preventDefault();
 
     emailjs
-      .sendForm("service_wfxaegm", "template_ym3579i", form.current, {
+      .sendForm("service_wfxaegm", "template_ym3579i", form.current!, {
         publicKey: "eEfMG9CJPESCvEzZH",
       })
       .then(
