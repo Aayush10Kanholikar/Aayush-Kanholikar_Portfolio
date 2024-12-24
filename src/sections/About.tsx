@@ -10,85 +10,84 @@ import ToolboxItems from "@/components/ToolboxItems";
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 import { WobbleCard } from "../components/ui/wobble-card";
+import HTMLIcon from "../assets/icons/html5.svg";
+import CSSIcon from "../assets/icons/css3.svg";
+import TailwindCSSIcon from "../assets/icons/tailwindcss.svg";
+import JavascriptIcon from "../assets/icons/javascript.svg";
+import JavaIcon from "../assets/icons/java-icon.svg";
+import ReactIcon from "../assets/icons/react.svg";
+import NextjsIcon from "../assets/icons/next-js.svg";
+import NodeIcon from "../assets/icons/nodejs.svg";
+import MongoDbIcon from "../assets/icons/mongodb.svg";
+import GithubIcon from "../assets/icons/icons8-github.svg";
+import TypeScriptIcon from "../assets/icons/typescript.svg";
+import ExpressIcon from "../assets/icons/icons8-express-js.svg";
+import MysqlIcon from "../assets/icons/mysql-ar21.svg";
+import PostmanIcon from "../assets/icons/postman.svg";
+import SeleniumIcon from "../assets/icons/selenium-svgrepo-com.svg";
 
 const toolboxItems = [
   {
-    title: "JavaScript",
-    iconType:
-      "https://premkhodke.vercel.app/_next/static/media/javascript.a9594db4.svg",
-  },
-  {
     title: "HTML5",
-    iconType: "https://www.w3.org/html/logo/badge/html5-badge-h-solo.png",
+    iconType: HTMLIcon,
   },
   {
     title: "CSS3",
-    iconType:
-      "https://premkhodke.vercel.app/_next/static/media/css.18344ad1.svg",
+    iconType: CSSIcon,
+  },
+  {
+    title: "Tailwind CSS",
+    iconType: TailwindCSSIcon,
+  },
+  {
+    title: "JavaScript",
+    iconType: JavascriptIcon,
+  },
+  {
+    title: "Java",
+    iconType: JavaIcon,
   },
 
   {
     title: "React",
-    iconType:
-      "https://premkhodke.vercel.app/_next/static/media/react.d60a0182.svg",
+    iconType: ReactIcon,
+  },
+  {
+    title: "Next.js",
+    iconType: NextjsIcon,
+  },
+  {
+    title: "TypeScript",
+    iconType: TypeScriptIcon,
+  },
+  {
+    title: "Node.js",
+    iconType: NodeIcon,
+  },
+  {
+    title: "MongoDB",
+    iconType: MongoDbIcon,
   },
 
   {
     title: "GitHub",
-    iconType: "	https://cdn-icons-png.flaticon.com/512/2111/2111432.png",
-  },
-  {
-    title: "Java",
-    iconType: "https://cdn-icons-png.flaticon.com/512/5968/5968282.png",
+    iconType: GithubIcon,
   },
   {
     title: "MySQL",
-    iconType: "https://www.mysql.com/common/logos/logo-mysql-170x115.png",
-  },
-  {
-    title: "MongoDB",
-    iconType:
-      "https://premkhodke.vercel.app/_next/static/media/mongodb.47f680af.svg",
-  },
-  {
-    title: "Linux",
-    iconType: "https://cdn-icons-png.flaticon.com/512/6124/6124995.png",
-  },
-  {
-    title: "Next.js",
-    iconType:
-      "https://premkhodke.vercel.app/_next/static/media/next-js.e54be70c.svg",
-  },
-  {
-    title: "Node.js",
-    iconType:
-      "	https://premkhodke.vercel.app/_next/static/media/nodejs.59c53601.svg",
+    iconType: MysqlIcon,
   },
   {
     title: "Express.js",
-    iconType:
-      "	https://adware-technologies.s3.amazonaws.com/uploads/technology/thumbnail/20/express-js.png",
+    iconType: ExpressIcon,
   },
-  {
-    title: "TypeScript",
-    iconType:
-      "	https://premkhodke.vercel.app/_next/static/media/typescript.27df170d.svg",
-  },
-  {
-    title: "Tailwind CSS",
-    iconType:
-      "	https://premkhodke.vercel.app/_next/static/media/tailwindcss.566567ff.svg",
-  },
-
   {
     title: "Postman",
-    iconType:
-      "https://premkhodke.vercel.app/_next/static/media/postman.293fd8fc.svg",
+    iconType: PostmanIcon,
   },
   {
     title: "Selenium",
-    iconType:
-      "https://static-00.iconduck.com/assets.00/selenium-icon-512x496-obrnvg2v.png",
+    iconType: SeleniumIcon,
   },
 ];
 
@@ -97,12 +96,12 @@ const hobbies = [
     title: "Cricket",
     emoji: "🏏",
     left: "5%",
-    top: "5%",
+    top: "0%",
   },
   {
     title: "Drawing",
     emoji: "🎨",
-    left: "5%",
+    left: "50%",
     top: "5%",
   },
 
@@ -110,20 +109,20 @@ const hobbies = [
     title: "Gaming",
     emoji: "🎮",
     left: "10%",
-    top: "35%",
+    top: "30%",
   },
 
   {
     title: "Music",
     emoji: "🎶",
-    left: "70%",
+    left: "50%",
     top: "45%",
   },
 
   {
     title: "Reading",
     emoji: "📚",
-    left: "45%",
+    left: "15%",
     top: "70%",
   },
 ];
@@ -219,8 +218,6 @@ export const AboutSection = () => {
                       key={hobby.title}
                       className="inline-flex items-center gap-2 px-4 bg-gradient-to-r from-emerald-300 to-sky-400 rounded-full py-1.5 absolute"
                       style={{ left: hobby.left, top: hobby.top }}
-                      drag
-                      dragConstraints={constraintRef}
                     >
                       <span className="font-medium text-gray-950">
                         {hobby.title}

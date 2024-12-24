@@ -2,6 +2,7 @@
 import Image from "next/image";
 import { Fragment } from "react";
 import { twMerge } from "tailwind-merge";
+import { TechIcon } from "./TechIcon";
 
 const ToolboxItems = ({
   items,
@@ -10,7 +11,7 @@ const ToolboxItems = ({
 }: {
   items: {
     title: string;
-    iconType: string;
+    iconType: React.ElementType;
   }[];
   className?: string;
   ItemsWrapperClassName?: string;
@@ -36,7 +37,8 @@ const ToolboxItems = ({
                 className="inline-flex items-center py-1  px-1 gap-4 outline outline-2 outline-white/10 rounded-lg"
               >
                 
-                <Image src={item.iconType} width="43" height="43" alt="Logo" className="" />
+                {/* <Image src={item.iconType} width="43" height="43" alt="Logo" className="" /> */}
+                <TechIcon component={item.iconType}/>
                 <span className="font-semibold">{item.title}</span>
               </div>
             ))}
