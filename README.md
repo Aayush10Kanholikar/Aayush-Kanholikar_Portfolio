@@ -33,6 +33,6 @@ This is my personal portfolio website built with modern web technologies to show
 ## 🚀 Live Demo
 
 Check out the live demo of my portfolio here:  
-👉 [Gymsy](https://aayush-kanholikar-portfolio.vercel.app/)
+👉 [My Portfolio](https://aayush-kanholikar-portfolio.vercel.app/)
 
 Feel free to **star ⭐** this repository if you find it useful. Contributions, feedback, and suggestions are always welcome! 🧑‍💻✨
