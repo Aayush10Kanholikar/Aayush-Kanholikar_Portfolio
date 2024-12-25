@@ -82,7 +82,7 @@ export const HeroSection = () => {
               transition={{ duration: 0.5, delay: 1.5 }}
             >
               <a
-                href="https://drive.google.com/file/d/1YrRUB3n0Ti8P5NJuKh28n7KkLv8DT5w2/view?usp=sharing"
+                href="https://drive.google.com/file/d/1z7aD0JvVTGZn13ZSHPl45V5Wxv4ZNpBU/view?usp=sharing"
                 className="  inline-block py-1 w-full sm:w-fit rounded-xl    text-white "
                 download="AayushKanholikar_CV.pdf"
                 target="_blank"
