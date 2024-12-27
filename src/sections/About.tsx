@@ -91,42 +91,6 @@ const toolboxItems = [
   },
 ];
 
-const hobbies = [
-  {
-    title: "Cricket",
-    emoji: "🏏",
-    left: "5%",
-    top: "0%",
-  },
-  {
-    title: "Drawing",
-    emoji: "🎨",
-    left: "50%",
-    top: "5%",
-  },
-
-  {
-    title: "Gaming",
-    emoji: "🎮",
-    left: "10%",
-    top: "30%",
-  },
-
-  {
-    title: "Music",
-    emoji: "🎶",
-    left: "50%",
-    top: "45%",
-  },
-
-  {
-    title: "Reading",
-    emoji: "📚",
-    left: "15%",
-    top: "70%",
-  },
-];
-
 const variants = {
   initial: {
     y: 100,
@@ -150,9 +114,6 @@ export const AboutSection = () => {
   const ref = useRef(null);
   const ref2 = useRef(null);
   const ref3 = useRef(null);
-  const isInView = useInView(ref, { margin: "50px" });
-  const isInView2 = useInView(ref2, { margin: "75px" });
-  const isInView3 = useInView(ref3, { margin: "100px" });
 
   return (
     <div id="about" className=" pb-40 md:pb-52 lg:pb-52">
@@ -187,12 +148,12 @@ export const AboutSection = () => {
                 <ToolboxItems
                   items={toolboxItems}
                   className="  "
-                  ItemsWrapperClassName="animate-move-left [animation-duration:60s]"
+                  ItemsWrapperClassName="animate-move-left [animation-duration:30s]"
                 />
                 <ToolboxItems
                   items={toolboxItems}
                   className="mt-6 "
-                  ItemsWrapperClassName="-translate-x-1/2 animate-move-right [animation-duration:30s]"
+                  ItemsWrapperClassName="-translate-x-1/2 animate-move-right [animation-duration:15s]"
                 />
               </Card>
             </WobbleCard>
@@ -204,23 +165,22 @@ export const AboutSection = () => {
             whileInView="animate"
             className=" flex justify-center "
           >
-            
-              <Card className="h-[320px] md:w-[400px] lg:w-[550px] p-0 relative  ">
+            <Card className="h-[320px] md:w-[400px] lg:w-[550px] p-0 relative  ">
+              <Image
+                src={mapImage}
+                alt="Map"
+                className="h-full w-full object-cover"
+              />
+              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 size-20 rounded-full   after:content-[''] after:absolute after:inset-0 after:outline after:outline-2 after:-outline-offset-2 after:rounded-full after:outline-gray-950/30">
+                <div className="absolute bg-gradient-to-r from-emerald-300 to-sky-400 inset-0 rounded-full -z-20 animate-ping [animation-duration:2s]"></div>
+                <div className="absolute bg-gradient-to-r from-emerald-300 to-sky-400 inset-0 rounded-full -z-10"></div>
                 <Image
-                  src={mapImage}
-                  alt="Map"
-                  className="h-full w-full object-cover"
+                  src={smileMemoji}
+                  alt="Smiling Emoji"
+                  className="size-20"
                 />
-                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 size-20 rounded-full   after:content-[''] after:absolute after:inset-0 after:outline after:outline-2 after:-outline-offset-2 after:rounded-full after:outline-gray-950/30">
-                  <div className="absolute bg-gradient-to-r from-emerald-300 to-sky-400 inset-0 rounded-full -z-20 animate-ping [animation-duration:2s]"></div>
-                  <div className="absolute bg-gradient-to-r from-emerald-300 to-sky-400 inset-0 rounded-full -z-10"></div>
-                  <Image
-                    src={smileMemoji}
-                    alt="Smiling Emoji"
-                    className="size-20"
-                  />
-                </div>
-              </Card>
+              </div>
+            </Card>
           </motion.div>
         </div>
       </div>

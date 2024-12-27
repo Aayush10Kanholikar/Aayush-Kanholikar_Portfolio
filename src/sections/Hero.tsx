@@ -82,9 +82,9 @@ export const HeroSection = () => {
               transition={{ duration: 0.5, delay: 1.5 }}
             >
               <a
-                href="https://drive.google.com/file/d/1z7aD0JvVTGZn13ZSHPl45V5Wxv4ZNpBU/view?usp=sharing"
+                href={"/Resume_AayushKanholikar_2024.pdf"}
                 className="  inline-block py-1 w-full sm:w-fit rounded-xl    text-white "
-                download="AayushKanholikar_CV.pdf"
+                download={"AayushKanholikar_CV.pdf"}
                 target="_blank"
               >
                 <HoverBorderGradient
