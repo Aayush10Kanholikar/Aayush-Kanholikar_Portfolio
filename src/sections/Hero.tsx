@@ -43,7 +43,7 @@ export const HeroSection = () => {
           </motion.div>
 
           <div className="max-w-lg mx-auto ">
-            <h1 className="font-serif text-2xl text-center mt-4 tracking-wide md:text-5xl text-nowrap">
+            <h1 className="font-serif text-lg text-center mt-4 tracking-wide md:text-5xl text-nowrap">
               <motion.span
                 initial={{ opacity: 0, scale: 0.5 }}
                 animate={{ opacity: 1, scale: 1 }}
@@ -57,7 +57,7 @@ export const HeroSection = () => {
                 initial={{ opacity: 0, scale: 0.5 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 1, delay: 0.5 }}
-                className="mt-3 text-3xl md:text-6xl  md:-ml-4 lg:-ml-6 "
+                className="mt-3 text-xl md:text-6xl  md:-ml-4 lg:-ml-6 "
                 style={{
                   color: "darkkhaki",
                 }}
