@@ -1,20 +1,29 @@
-import { TimelineDemo } from "@/components/Timeline";
+"use client";
+
 import { AboutSection } from "@/sections/About";
 import Contact from "@/sections/Contact";
 import Footer from "@/sections/Footer";
 import { Header } from "@/sections/Header";
 import { HeroSection } from "@/sections/Hero";
 import { ProjectsSection } from "@/sections/Projects";
+import {SnackbarProvider} from "notistack"
 
 export default function Home() {
   return (
-    <div>
+    <SnackbarProvider 
+        anchorOrigin={{
+        vertical: "bottom",
+        horizontal: "center",
+      }}
+    >
+      <div>
       <Header />
       <HeroSection />
       <AboutSection />
       <ProjectsSection />
       <Contact/>
       <Footer />
-    </div>
+      </div>
+    </SnackbarProvider>
   );
 }

@@ -26,9 +26,6 @@ export const Header = () => {
         <motion.a href="#about" className="nav-item">
           About
         </motion.a>
-        <motion.a href="#education" className="nav-item">
-          Education
-        </motion.a>
         <motion.a href="#projects" className="nav-item">
           Projects
         </motion.a>
@@ -64,13 +61,6 @@ export const Header = () => {
             onClick={toggleMenu}
           >
             About
-          </a>
-          <a
-            href="#education"
-            className="text-white text-lg hover:bg-white/10 transition duration-300 hover:text-white px-2.5 py-1 rounded-xl"
-            onClick={toggleMenu}
-          >
-            Education
           </a>
           <a
             href="#projects"

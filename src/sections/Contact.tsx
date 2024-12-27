@@ -9,6 +9,7 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import emailjs from "@emailjs/browser";
 import SectionHeader from "@/components/SectionHeader";
+import { enqueueSnackbar } from "notistack";
 
 const variants = {
   initial: {
@@ -46,44 +47,36 @@ const Contact = () => {
     const email = "akanolikar@gmail.com";
     navigator.clipboard.writeText(email).then(
       () => {
-        toast.success("Email ID copied to clipboard!", {
-          position: "bottom-left",
-          autoClose: 3000, // The toast will auto-close after 3 seconds
-        });
+        enqueueSnackbar("Email ID copied to clipboard", { variant: "success" });
       },
       () => {
-        toast.error("Failed to copy email.", {
-          position: "bottom-left",
-          autoClose: 3000,
-        });
+        enqueueSnackbar("Failed to copy email.", { variant: "error" });
       }
     );
   };
+
+  const serviceID = process.env.NEXT_PUBLIC_SERVICE_ID;
+  const templateID = process.env.NEXT_PUBLIC_TEMPLATE_ID;
+  const publicID = process.env.NEXT_PUBLIC_PUBLIC_KEY;
 
   const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
     emailjs
-      .sendForm("service_wfxaegm", "template_ym3579i", form.current!, {
-        publicKey: "eEfMG9CJPESCvEzZH",
+      .sendForm(`${serviceID}`, `${templateID}`, form.current!, {
+        publicKey: `${publicID}`,
       })
       .then(
         () => {
-          toast.success(
+          enqueueSnackbar(
             "Thank you! Your message has been delivered successfully.",
-            {
-              position: "bottom-left",
-              autoClose: 3000, // The toast will auto-close after 3 seconds
-            }
+            { variant: "success" }
           );
         },
         () => {
-          toast.error(
+          enqueueSnackbar(
             "Failed to send your email. Please check your details and try again.",
-            {
-              position: "bottom-left",
-              autoClose: 3000,
-            }
+            { variant: "error" }
           );
         }
       );

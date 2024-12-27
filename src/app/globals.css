@@ -2,11 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+html,
 body {
-  overflow: auto;
-  
-  
-  
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+
+  @media (min-width: 375px) {
+    overflow-x: hidden;
+  }
 }
 
 @layer base {
@@ -39,8 +44,4 @@ body {
 
 Handle on hover ::-webkit-scrollbar-thumb:hover {
   background: linear-gradient(to right, #6ee7b7, #38bdf8);
-}
-
-body {
-  overflow-x: hidden;
 }
