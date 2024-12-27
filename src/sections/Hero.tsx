@@ -23,7 +23,7 @@ export const HeroSection = () => {
   return (
     <div
       id="home"
-      className=" max-w-[1050px] mx-auto pt-28 pb-64 md:pt-28 md:pb-0    relative z-0"
+      className=" max-w-[1050px] mx-auto pt-28 pb-20 md:pt-28 md:pb-0    relative z-0"
     >
       <BackgroundLines className="">
         <div className="container relative z-20">
@@ -43,7 +43,7 @@ export const HeroSection = () => {
           </motion.div>
 
           <div className="max-w-lg mx-auto ">
-            <h1 className="font-serif text-3xl text-center mt-4 tracking-wide md:text-5xl text-nowrap">
+            <h1 className="font-serif text-2xl text-center mt-4 tracking-wide md:text-5xl text-nowrap">
               <motion.span
                 initial={{ opacity: 0, scale: 0.5 }}
                 animate={{ opacity: 1, scale: 1 }}
@@ -57,7 +57,7 @@ export const HeroSection = () => {
                 initial={{ opacity: 0, scale: 0.5 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 1, delay: 0.5 }}
-                className="mt-5 text-4xl md:text-6xl  md:-ml-4 lg:-ml-6 "
+                className="mt-3 text-3xl md:text-6xl  md:-ml-4 lg:-ml-6 "
                 style={{
                   color: "darkkhaki",
                 }}

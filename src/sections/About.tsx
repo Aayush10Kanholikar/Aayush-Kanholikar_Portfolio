@@ -174,7 +174,7 @@ export const AboutSection = () => {
             variants={variants}
             initial="initial"
             whileInView="animate"
-            className="grid grid-cols-1  md:grid-cols-1 lg:grid-cols-3  "
+            className="grid grid-cols-1  md:grid-cols-1 lg:grid-cols-3 "
           >
             <WobbleCard containerClassName="col-span-1  h-[350px] lg:col-span-3 bg-gray-900 p-0 ">
               <Card className="w-full h-full  md:col-span-1 lg:col-span-2">
@@ -202,34 +202,10 @@ export const AboutSection = () => {
             variants={variants}
             initial="initial"
             whileInView="animate"
-            className="grid grid-cols-1 gap-8 md:grid-cols-5 lg:grid-cols-5"
+            className=" flex justify-center "
           >
-            <WobbleCard containerClassName="md:col-span-2  h-[320px] lg:col-span-2 bg-gray-900  p-0 ">
-              <Card className="h-[320px] p-0 flex flex-col md:col-span-2 lg:col-span-2">
-                <CardHeader
-                  title="Beyond the Code"
-                  description=" Explore my Interest and Hobbies"
-                  className="px-6 py-6 text-2xl"
-                />
-
-                <div className="relative flex-1" ref={constraintRef}>
-                  {hobbies.map((hobby) => (
-                    <motion.div
-                      key={hobby.title}
-                      className="inline-flex items-center gap-2 px-4 bg-gradient-to-r from-emerald-300 to-sky-400 rounded-full py-1.5 absolute"
-                      style={{ left: hobby.left, top: hobby.top }}
-                    >
-                      <span className="font-medium text-gray-950">
-                        {hobby.title}
-                      </span>
-                      <span>{hobby.emoji}</span>
-                    </motion.div>
-                  ))}
-                </div>
-              </Card>
-            </WobbleCard>
-            <WobbleCard containerClassName="md:col-span-3  h-[320px] lg:col-span-3  p-0 ">
-              <Card className="h-[320px] p-0 relative md:col-span-3 lg:col-span-1">
+            
+              <Card className="h-[320px] md:w-[400px] lg:w-[550px] p-0 relative  ">
                 <Image
                   src={mapImage}
                   alt="Map"
@@ -245,7 +221,6 @@ export const AboutSection = () => {
                   />
                 </div>
               </Card>
-            </WobbleCard>
           </motion.div>
         </div>
       </div>

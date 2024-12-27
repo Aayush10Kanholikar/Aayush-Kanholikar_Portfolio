@@ -144,8 +144,8 @@ export const ProjectsSection = () => {
                     >
                       {/* <Link href={project.link} target="_blank"> */}
                         <button className="bg-white text-gray-950 h-12 w-full md:w-auto px-6 rounded-xl font-semibold inline-flex items-center justify-center gap-2  mt-8">
-                          <span>Visit Live Site</span>
-                          <ArrowUpIcon className="size-4" />
+                          <span className="text-sm md:text-lg">Visit Site</span>
+                          <ArrowUpIcon className="size-7 md:size-5" />
                         </button>
                       {/* </Link> */}
                     </LinkPreview>
@@ -161,9 +161,9 @@ export const ProjectsSection = () => {
                             alt="Github"
                             width={35}
                             height={35}
-                            className=""
+                            className="size-7 md:size-7"
                           />
-                          <span>GitHub</span>
+                          <span className="text-sm md:text-lg">GitHub</span>
                         </button>
                       {/* </Link> */}
                     </LinkPreview>

@@ -146,14 +146,14 @@ const Contact = () => {
           </motion.div>
         </motion.div>
 
-        <div className="flex-1 relative w-full px-20 md:px-0">
+        <div className=" container flex-1 relative w-full px-20 md:px-0">
           <motion.form
             onSubmit={sendEmail}
             ref={form}
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ delay: 0, duration: 1 }}
-            className=" flex flex-col gap-5 "
+            className="  flex flex-col gap-5 "
           >
             <input
               type="text"

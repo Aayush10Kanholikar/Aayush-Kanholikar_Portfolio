@@ -12,7 +12,6 @@ export default function Home() {
       <Header />
       <HeroSection />
       <AboutSection />
-      <TimelineDemo/>
       <ProjectsSection />
       <Contact/>
       <Footer />
