@@ -165,7 +165,7 @@ export const AboutSection = () => {
             whileInView="animate"
             className=" flex justify-center "
           >
-            <Card className="h-[320px] md:w-[400px] lg:w-[550px] p-0 relative  ">
+            <Card className="h-[320px] md:w-[400px] lg:w-[550px] p-0 relative  after:z-10 after:content-[''] after:absolute after:inset-0 after:outline-2 after:outline after:-outline-offset-2  after:rounded-2xl after:outline-white/20 after:pointer-events-none ">
               <Image
                 src={mapImage}
                 alt="Map"
