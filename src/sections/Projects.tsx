@@ -24,7 +24,7 @@ const portfolioProjects = [
       },
       {
         title:
-          "ntegrated Rapid API to fetch and display real-time exercise data",
+          "Integrated Rapid API to fetch and display real-time exercise data",
       },
       {
         title:
@@ -145,7 +145,7 @@ export const ProjectsSection = () => {
                       className="font-bold"
                     >
                       {/* <Link href={project.link} target="_blank"> */}
-                      <button className="bg-white text-gray-950 h-12 w-full md:w-auto px-6 rounded-xl font-semibold inline-flex items-center justify-center gap-2  mt-8">
+                      <button className="bg-white text-gray-950 h-12 w-full md:w-auto px-6 rounded-xl font-semibold inline-flex items-center justify-center gap-2  mt-8 transition-transform transform hover:-translate-y-1 hover:shadow-lg hover:bg-white/80 hover:text-black">
                         <span className="text-sm md:text-lg">Visit Site</span>
                         <ArrowUpIcon className="size-7 md:size-5" />
                       </button>
@@ -157,7 +157,7 @@ export const ProjectsSection = () => {
                       className="font-bold"
                     >
                       {/* <Link href={project.Github} target="_blank"> */}
-                      <button className="bg-slate-950/60 text-white h-12 w-full md:w-auto px-6 rounded-xl font-semibold inline-flex items-center justify-center gap-2  mt-8">
+                      <button className="bg-slate-950/60 text-white h-12 w-full md:w-auto px-6 rounded-xl font-semibold inline-flex items-center justify-center gap-2  mt-8 transition-transform transform hover:-translate-y-1 hover:shadow-lg hover:bg-gray-950">
                         <Image
                           src="https://cdn-icons-png.flaticon.com/128/5968/5968896.png"
                           alt="Github"
