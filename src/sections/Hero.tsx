@@ -8,8 +8,11 @@ import { BackgroundLines } from "../components/ui/background-lines";
 import { FlipWords } from "../components/ui/flip-words";
 import { TextGenerateEffect } from "../components/ui/text-generate-effect";
 import { HoverBorderGradient } from "../components/ui/hover-border-gradient";
+import { useEffect } from "react";
+import { useSnackbar } from "notistack";
 
 export const HeroSection = () => {
+  const { enqueueSnackbar } = useSnackbar();
   const words = [
     "Aayush Kanholikar",
     "Web Developer",
@@ -19,6 +22,19 @@ export const HeroSection = () => {
 
   const paragraph =
     "I specialize in transforming designs into functional,    high-performing web application. Let's discuss your next projects.";
+
+  useEffect(() => {
+    const isMobile = window.innerWidth <= 768;
+    if (isMobile) {
+      enqueueSnackbar(
+        "For a better experience, please view this website on a desktop.",
+        {
+          variant: "info",
+          autoHideDuration: 5000,
+        }
+      );
+    }
+  }, [enqueueSnackbar]);
 
   return (
     <div

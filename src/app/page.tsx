@@ -14,7 +14,9 @@ export default function Home() {
         anchorOrigin={{
         vertical: "bottom",
         horizontal: "center",
+        
       }}
+      maxSnack={1}
     >
       <div>
       <Header />
