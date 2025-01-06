@@ -1,7 +1,7 @@
 "use client";
 
 import GymsyPic from "../assets/images/gymsy.png";
-import AIPrompt from "../assets/images/ai prompt.png";
+import CarSpective from "../assets/images/Car Spective.png";
 import YTclone from "../assets/images/yt clone.png";
 import Image from "next/image";
 import CheckIcon from "@/assets/icons/check-circle.svg";
@@ -36,23 +36,24 @@ const portfolioProjects = [
     image: GymsyPic,
   },
   {
-    title: "AI Prompt",
+    title: "Car Spective",
     results: [
       {
         title:
-          "Developed a full-stack AI prompt generation platform using Next.js",
+          "Developed a responsive car showcase platform using Next.js and TailwindCSS,",
       },
       {
         title:
-          "Implemented secure authentication and authorization with NextAuth",
+          "Implemented dynamic data fetching with RapidAPI to fetch and display real-time car data",
       },
       {
-        title: "Designed and managed a scalable database schema using MongoDB",
+        title:
+          "Utilized TypeScript for enhanced code quality, type safety, and scalability.",
       },
     ],
-    link: "https://ai-prompts-chi.vercel.app/",
-    Github: "https://github.com/Aayush10Kanholikar/AI-Prompts",
-    image: AIPrompt,
+    link: "https://car-spective.vercel.app/",
+    Github: "https://github.com/Aayush10Kanholikar/CarSpective-using-NextJs",
+    image: CarSpective,
   },
   {
     title: "YouTube Clone",
